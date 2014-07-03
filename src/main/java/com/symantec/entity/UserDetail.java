@@ -15,37 +15,15 @@ import javax.persistence.Table;
 @Table(name = "user_detail", catalog = "hackathon")
 public class UserDetail implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	@Id
 	@Column(name = "ID")
 	@GeneratedValue
 	private Integer id;
-	/**
-	 * @param id
-	 * @param firstname
-	 * @param lastname
-	 * @param email
-	 * @param telephone
-	 * @param govId
-	 * @param serviceType
-	 * @param govIdType
-	 * @param age
-	 * @param userType
-	 */
-	public UserDetail(Integer id, String firstname, String lastname,
-			String email, String telephone, String govId, String serviceType,
-			String govIdType, String age, String userType) {
-		super();
-		this.id = id;
-		this.firstname = firstname;
-		this.lastname = lastname;
-		this.email = email;
-		this.telephone = telephone;
-		this.govId = govId;
-		this.serviceType = serviceType;
-		this.govIdType = govIdType;
-		this.age = age;
-		this.userType = userType;
-	}
 	@Column(name = "firstname")
 	private String firstname;
 	@Column(name = "lastname")
@@ -64,6 +42,32 @@ public class UserDetail implements java.io.Serializable {
 	private String age;
 	@Column(name = "userType")
 	private String userType;
+	
+	/**
+	 * @param firstname
+	 * @param lastname
+	 * @param email
+	 * @param telephone
+	 * @param govId
+	 * @param serviceType
+	 * @param govIdType
+	 * @param age
+	 * @param userType
+	 */
+	public UserDetail(String firstname, String lastname,
+			String email, String telephone, String govId, String serviceType,
+			String govIdType, String age, String userType) {
+		super();
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.email = email;
+		this.telephone = telephone;
+		this.govId = govId;
+		this.serviceType = serviceType;
+		this.govIdType = govIdType;
+		this.age = age;
+		this.userType = userType;
+	}
 	/**
 	 * @return the id
 	 */

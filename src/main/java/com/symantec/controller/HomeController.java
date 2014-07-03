@@ -28,7 +28,7 @@ public class HomeController {
 	@RequestMapping(value="/")
 	public ModelAndView homePage(){
 		
-		usrService.healthInfo(new UserDetail(1,"Prakash","Manwani","abc@gmail.com","4088362049","qwerty","qwer","asdfg","12","qazwsx"),null);
+		usrService.healthInfo(new UserDetail("Prakash","Manwani","abc@gmail.com","4088362049","qwerty","qwer","asdfg","12","qazwsx"),null);
 		return new ModelAndView("index");
 	}
 	

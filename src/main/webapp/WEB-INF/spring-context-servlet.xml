@@ -61,6 +61,18 @@
 	<bean id="userDao" class="com.symantec.dao.UserDaoImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
+	<bean id="clothDao" class="com.symantec.dao.ClothDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="healthDao" class="com.symantec.dao.HealthDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="moneyDao" class="com.symantec.dao.MoneyDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="socialDao" class="com.symantec.dao.SocialDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
 	<bean id="userService" class="com.symantec.service.UserServiceImpl">
 		<property name="usd" ref="userDao"></property>
 	</bean>
