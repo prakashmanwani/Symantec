@@ -45,10 +45,10 @@
       <ul>
         <li>
           <h3>Donors</h3>
-          <a href="#"><img src="<c:url value="/resources/img/donate.jpeg"/>" alt="" width="300"></a><span></a></span> </li>
+          <a href="<c:url value="/donor" />"><img src="<c:url value="/resources/img/donate.jpeg"/>" alt="" width="300"></a><span></a></span> </li>
         <li>
           <h3>Need help</h3>
-          <a href="#"><img src="<c:url value="/resources/img/give-money.jpg"/>" alt="" width="300"></a> <span></a></span> </li>
+          <a href="<c:url value="/need" />"><img src="<c:url value="/resources/img/give-money.jpg"/>" alt="" width="300"></a> <span></a></span> </li>
         <li class="last">
           <h3>Benefitted Ngos</h3>
           <a href="#"><img src="<c:url value="/resources/img/"/>" alt=""></a> <span>try to insert a list here</a></span> </li>
