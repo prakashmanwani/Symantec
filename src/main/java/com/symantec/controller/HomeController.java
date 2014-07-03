@@ -34,12 +34,12 @@ public class HomeController {
 	
 	@RequestMapping(value="donor")
 	public ModelAndView donorPage(){
-		return new ModelAndView("donorPage");
+		return new ModelAndView("donor");
 	}
 	
 	@RequestMapping(value="need")
 	public ModelAndView needPage(){
-		return new ModelAndView("needPage");
+		return new ModelAndView("needhelp");
 	}
 
 }
