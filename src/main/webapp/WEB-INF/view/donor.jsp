@@ -1,4 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <!--[if IE 6]> <html class="ie6"> <![endif]-->
 <!--[if IE 7]> <html class="ie7"> <![endif]-->
@@ -7,8 +8,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>SymDonate</title>
-//<link href="css/reset.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="<c:url value="resources/css/reset.css" />" rel="stylesheet" type="text/css">
+<link href="<c:url value="resources/css/style.css" />" rel="stylesheet" type="text/css">
 <!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
 </head>
 <body>
@@ -17,7 +18,7 @@
   <!--header_container-->
   <div class="header_container">
     <!--logo-->
-    <div class="logo fl-lt"><a href="#"><img src="img/symDonate.jpg" alt="logo" width="70" height="50">
+    <div class="logo fl-lt"><a href="#"><img src="<c:url value="resources/img/symDonate.jpg" />" alt="logo" width="70" height="50">
         SymDonate</a></div>
     <!--logo-->
     <!--nav-->
@@ -45,20 +46,20 @@
         <tr>
 			<td>
 				<h3>Clothes</h3>
-				<a href="#"><img src="img/donate-clothes.jpg" alt="Donate Clothes" height="300" width="450"></a>
+				<a href="#"><img src="<c:url value="resources/img/donate-clothes.jpg" />" alt="Donate Clothes" height="300" width="450"></a>
 			</td>
 			<td>
 				<h3>Money</h3>
-				<a href="#"><img src="img/donate-money.jpg" height="300" width="450" alt=""></a>
+				<a href="#"><img src="<c:url value="resources/img/donate-money.jpg" />" height="300" width="450" alt=""></a>
 			</td>
         <tr>
 			<td>
 			    <h3>Health Services</h3>
-				<a href="#"><img src="img/donate-blood.jpg" alt="" height="300" width="450"></a>
+				<a href="#"><img src="<c:url value="resources/img/donate-blood.jpg" />" alt="" height="300" width="450"></a>
 			</td>
 			<td>
 			    <h3>Time / Social Service</h3>
-				<a href="#"><img src="img/donate-time.jpg" alt="" height="300" width="450"></a>
+				<a href="#"><img src="<c:url value="resources/img/donate-time.jpg" />" alt="" height="300" width="450"></a>
 			</td>
 		</tr>
 	  </table>
@@ -104,8 +105,6 @@
   <!--footer_container-->
 </div>
 <!--wrapper-->
-	
-  </div>
  
  
 </body>
