@@ -23,7 +23,7 @@ public class Money {
     @JoinColumn(name = "userid", nullable = false)
 	private UserDetail userid;
 	@Column(name = "amount", nullable = false, precision = 20)
-	private BigDecimal blood_group;
+	private BigDecimal amount;
 	@Column(name = "description", nullable = false, length = 200)
 	private String description;
 	@Column(name = "payment_gateway", nullable = false, length = 20)
@@ -47,7 +47,7 @@ public class Money {
 			String user_type) {
 		super();
 		this.userid = userid;
-		this.blood_group = blood_group;
+		this.amount = blood_group;
 		this.description = description;
 		this.payment_gateway = payment_gateway;
 		this.payment_status = payment_status;
@@ -80,14 +80,14 @@ public class Money {
 	/**
 	 * @return the blood_group
 	 */
-	public BigDecimal getBlood_group() {
-		return blood_group;
+	public BigDecimal getAmount() {
+		return amount;
 	}
 	/**
 	 * @param blood_group the blood_group to set
 	 */
-	public void setBlood_group(BigDecimal blood_group) {
-		this.blood_group = blood_group;
+	public void setAmount(BigDecimal amount) {
+		this.amount = amount;
 	}
 	/**
 	 * @return the description

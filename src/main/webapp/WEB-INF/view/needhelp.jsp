@@ -1,4 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <!--[if IE 6]> <html class="ie6"> <![endif]-->
 <!--[if IE 7]> <html class="ie7"> <![endif]-->
@@ -112,9 +113,5 @@
 		<!--footer_container-->
 	</div>
 	<!--wrapper-->
-
-	</div>
-
-
 </body>
 </html>

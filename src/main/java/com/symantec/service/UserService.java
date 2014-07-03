@@ -5,4 +5,5 @@ import com.symantec.entity.UserDetail;
 
 public interface UserService {
 	public void healthInfo(UserDetail usr, Health hsrc);
+	
 }

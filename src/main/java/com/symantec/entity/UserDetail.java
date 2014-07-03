@@ -43,6 +43,10 @@ public class UserDetail implements java.io.Serializable {
 	@Column(name = "userType")
 	private String userType;
 	
+	public UserDetail(){
+		super();
+	}
+	
 	/**
 	 * @param firstname
 	 * @param lastname
