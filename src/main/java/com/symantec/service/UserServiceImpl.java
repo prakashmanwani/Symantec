@@ -26,7 +26,7 @@ public class UserServiceImpl implements UserService{
 
 	public void healthInfo(UserDetail usr, Health hsrc) {
 		usd.addUser(usr);
-		usd.addHealth(hsrc);	
+		//usd.addHealth(hsrc);	
 	}
 	
 }

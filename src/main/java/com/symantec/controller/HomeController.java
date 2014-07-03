@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.symantec.entity.UserDetail;
 import com.symantec.service.UserService;
 
 @Controller
@@ -26,6 +27,8 @@ public class HomeController {
 
 	@RequestMapping(value="/")
 	public ModelAndView homePage(){
+		
+		usrService.healthInfo(new UserDetail(1,"Prakash","Manwani","abc@gmail.com","4088362049","qwerty","qwer","asdfg","12","qazwsx"),null);
 		return new ModelAndView("index");
 	}
 	
